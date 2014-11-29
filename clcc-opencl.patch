@@ -1,0 +1,13 @@
+--- clcc-0.3.0/src/options.cpp.orig	2011-12-13 14:48:00.000000000 +0100
++++ clcc-0.3.0/src/options.cpp	2014-11-29 21:25:19.837851731 +0100
+@@ -33,8 +33,8 @@
+ #define CLCC_OPENCL_DYNLIB_NAME "/Library/Frameworks/OpenCL.framework/OpenCL"
+ #endif
+ 
+-#ifdef __LINUX__
+-#define CLCC_OPENCL_DYNLIB_NAME "libOpenCL.so";
++#if defined(__LINUX__) || defined(__linux__)
++#define CLCC_OPENCL_DYNLIB_NAME "libOpenCL.so.1";
+ #endif
+ 
+ static const char* opencl_lib_default = CLCC_OPENCL_DYNLIB_NAME;    //!<    The default dynamic library name to open, its value is platform-specific

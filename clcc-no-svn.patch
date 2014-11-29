@@ -1,0 +1,16 @@
+--- clcc-0.3.0/CMakeLists.txt.orig	2012-01-15 17:52:10.000000000 +0100
++++ clcc-0.3.0/CMakeLists.txt	2014-11-29 21:15:55.441208753 +0100
+@@ -19,13 +19,6 @@
+ set(CLCC_VERSION_PATCH	0)
+ set(CLCC_VERSION_BUILD	0)	#	Undetermined, set by subversion (if present)
+ 
+-find_package(Subversion)
+-
+-if (Subversion_FOUND)
+-	Subversion_WC_INFO(${PROJECT_SOURCE_DIR} clcc)
+-	set(CLCC_VERSION_BUILD	${clcc_WC_REVISION})
+-endif()
+-
+ if (WIN32)
+ 	set(CLCC_PLATFORM	win32)    
+ endif()

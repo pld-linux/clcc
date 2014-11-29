@@ -1,0 +1,10 @@
+--- clcc-0.3.0/src/CMakeLists.txt.orig	2012-01-15 17:52:10.000000000 +0100
++++ clcc-0.3.0/src/CMakeLists.txt	2014-11-29 20:44:33.061287745 +0100
+@@ -10,7 +10,6 @@
+ #  (See accompanying file license.txt)
+ ##########################################################################
+ 
+-set(Boost_USE_STATIC_LIBS ON)
+ find_package(Boost REQUIRED program_options)
+ 
+ if (MSVC)
