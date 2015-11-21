@@ -2,7 +2,7 @@ Summary:	CLCC - The OpenCL kernel compiler
 Summary(pl.UTF-8):	CLCC - kompilator jąder OpenCL
 Name:		clcc
 Version:	0.3.0
-Release:	3
+Release:	4
 License:	Boost v1.0
 Group:		Development/Tools
 Source0:	http://downloads.sourceforge.net/clcc/%{name}-%{version}-25-src.zip
@@ -10,6 +10,7 @@ Source0:	http://downloads.sourceforge.net/clcc/%{name}-%{version}-25-src.zip
 Patch0:		%{name}-shared.patch
 Patch1:		%{name}-no-svn.patch
 Patch2:		%{name}-opencl.patch
+Patch3:		boost-1.59.patch
 URL:		http://clcc.sourceforge.net/
 BuildRequires:	boost-devel
 BuildRequires:	cmake >= 2.8
@@ -37,6 +38,7 @@ program.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 install -d build

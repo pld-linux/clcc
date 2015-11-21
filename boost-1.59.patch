@@ -1,0 +1,11 @@
+--- clcc-0.3.0/src/CMakeLists.txt~	2015-11-21 23:23:37.000000000 +0100
++++ clcc-0.3.0/src/CMakeLists.txt	2015-11-21 23:28:23.721669338 +0100
+@@ -41,7 +41,7 @@
+ 
+ if (Boost_FOUND)
+     include_directories(${Boost_INCLUDE_DIRS})
+-    target_link_libraries(clcc ${Boost_LIBRARIES})
++    target_link_libraries(clcc ${Boost_LIBRARIES} -lboost_system)
+ endif()
+ 
+ source_group("Test Files" FILES test.cl test_error.cl test_multifile.cl)
