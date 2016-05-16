@@ -2,7 +2,7 @@ Summary:	CLCC - The OpenCL kernel compiler
 Summary(pl.UTF-8):	CLCC - kompilator jąder OpenCL
 Name:		clcc
 Version:	0.3.0
-Release:	4
+Release:	5
 License:	Boost v1.0
 Group:		Development/Tools
 Source0:	http://downloads.sourceforge.net/clcc/%{name}-%{version}-25-src.zip
